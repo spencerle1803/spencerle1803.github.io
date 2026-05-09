@@ -27,7 +27,7 @@ export default function CoreSkills() {
     { src: 'assets/logos/mailchimp.png', name: 'Mailchimp' },
   ];
   return (
-    <section className="flex flex-col justify-center px-6 py-12 md:py-16 lg:py-32">
+    <section id="skills" className="flex flex-col justify-center px-6 py-12 md:py-16 lg:py-32">
       <div className="max-w-5xl mx-auto w-full flex flex-col-reverse justify-center items-center lg:grid lg:grid-cols-[1fr_1fr] gap-16 lg:gap-32">
         <div
           className="flex relative group origin-center aspect-square w-[95%] max-w-100"
