@@ -1,8 +1,8 @@
 const services = [
   {
-    title: 'Content Strategy',
+    title: 'Content and Brand Strategy',
     description:
-      'End-to-end content planning — from audience research and content pillars to editorial calendars that keep you consistent.',
+      'End-to-end content planning: from audience research and content pillars to editorial calendars that keep you consistent.',
   },
   {
     title: 'Social Media Management',
@@ -16,16 +16,16 @@ const services = [
   },
   {
     title: 'Brand Voice & Copywriting',
-    description: 'Captions, bios, email copy, and campaign messaging that sound like you — but better.',
+    description: 'Captions, bios, email copy, and campaign messaging that sound like you... but better.',
   },
 ];
 
 export default function Projects() {
   return (
-    <section id="services" className="py-16 lg:py-20 px-6 border-t border-white/10">
+    <section id="services" className="py-16 lg:py-20 px-6 border-t border-muted/20">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Services</h2>
-        <p className="text-[#888] mb-14 max-w-md">
+        <p className="text-muted mb-14 max-w-md">
           {/* Adjust to fit your offer */}
           Whether you need a full strategy or just a creative partner, here's how I can help.
         </p>
@@ -34,11 +34,11 @@ export default function Projects() {
           {services.map(({ title, description }) => (
             <div
               key={title}
-              className="p-7 bg-[#1a1a1a] rounded-2xl border border-white/5 hover:border-accent-2/30 transition-colors duration-300"
+              className="p-7 bg-surface rounded-2xl border border-accent-1/10 hover:border-accent-2/50 hover:shadow-md transition-all duration-300"
             >
               <div className="w-8 h-0.5 bg-accent-2 mb-5" />
-              <h3 className="font-semibold text-lg mb-3">{title}</h3>
-              <p className="text-[#888] text-sm leading-relaxed">{description}</p>
+              <h3 className="font-bold text-lg mb-3 text-text">{title}</h3>
+              <p className="text-muted text-sm leading-relaxed">{description}</p>
             </div>
           ))}
         </div>

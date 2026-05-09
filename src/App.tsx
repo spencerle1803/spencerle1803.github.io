@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CoreSkills from './components/CoreSkills';
+import Services from './components/Services';
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
         <About />
         <CoreSkills />
         <SocialMedia />
-        {/* <Services /> */}
+        <Services />
         <Contact />
       </main>
       <Footer />
