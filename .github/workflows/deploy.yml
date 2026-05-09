@@ -31,7 +31,7 @@ jobs:
         run: npm run build
         env:
           # Must match your GitHub repo name, e.g. /my-portfolio/
-          VITE_BASE: /spencer-portfolio/
+          VITE_BASE: /
 
       - uses: actions/upload-pages-artifact@v3
         with:
