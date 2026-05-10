@@ -5,19 +5,24 @@ export default function Skills() {
   const [hovered, setHovered] = useState("");
   const content = [
     {
-      title: "Content & Branding Strategy",
+      title: "Branding & Content",
       description:
-        "I break down complex ideas into more relatable and engaging content.",
-    },
-    {
-      title: "Paid Advertising (Display)",
-      description:
-        "I transform data into actionable insights to optimize ad performance and drive ROI.",
+        "End-to-end planning and execution: from research, pillars to guidelines and calendars that keep you consistent.",
     },
     {
       title: "Graphic Design",
       description:
-        "I transform data into actionable insights to optimize ad performance and drive ROI.",
+        "Purposeful visual assets across every channel required to elevate brand presence and engagement.",
+    },
+    {
+      title: "Paid Advertising",
+      description:
+        "Data-driven campaigns across display, native and social media channels for lead generation and conversion.",
+    },
+    {
+      title: "Social Media",
+      description:
+        "Hands-on management of your Facebook, Instagram and TikTok with routine reporting.",
     },
   ];
 
