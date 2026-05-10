@@ -4,7 +4,7 @@ import SocialMedia from './components/SocialMedia';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import CoreSkills from './components/CoreSkills';
+import Skills from './components/Skills';
 import Services from './components/Services';
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <CoreSkills />
+        <Skills />
         <SocialMedia />
         <Services />
         <Contact />
