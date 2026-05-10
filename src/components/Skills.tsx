@@ -7,7 +7,7 @@ export default function Skills() {
     {
       title: "Branding & Content",
       description:
-        "End-to-end planning and execution: from research, pillars to guidelines and calendars that keep you consistent.",
+        "End-to-end planning and execution: from research and pillars to guidelines and calendars.",
     },
     {
       title: "Graphic Design",
