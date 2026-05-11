@@ -8,21 +8,25 @@ export default function Skills() {
       title: "Branding & Content",
       description:
         "End-to-end planning and execution: from research and pillars to guidelines and calendars.",
+      href: "#branding",
     },
     {
       title: "Graphic Design",
       description:
         "Purposeful visual assets across every channel required to elevate brand presence and engagement.",
+      href: "#graphic",
     },
     {
       title: "Paid Advertising",
       description:
         "Data-driven campaigns across display, native and social media channels for lead generation and conversion.",
+      href: "#paid",
     },
     {
       title: "Social Media",
       description:
         "Hands-on management of your Facebook, Instagram and TikTok with routine reporting.",
+      href: "#social",
     },
   ];
 
@@ -76,7 +80,7 @@ export default function Skills() {
           ))}
           <div className="absolute flex flex-row justify-center items-center text-wrap w-full h-full text-center pointer-events-none">
             <span
-              className={`text-accent-2 absolute top-34 text-3xl font-body h-30 flex justify-center items-center w-30 text-center font-semibold ${hovered ? "opacity-100" : "opacity-0"} transition-opacity duration-300`}
+              className={`text-accent-2 absolute top-34 text-3xl font-display h-30 flex justify-center items-center w-30 text-center font-bold ${hovered ? "opacity-100" : "opacity-0"} transition-opacity duration-300`}
             >
               {hovered}
             </span>
@@ -87,8 +91,8 @@ export default function Skills() {
             Skills
           </h2>
           <div className="flex flex-col gap-4">
-            {content.map(({ title, description }) => (
-              <SkillsCard title={title} description={description} />
+            {content.map(({ title, description, href }) => (
+              <SkillsCard title={title} description={description} href={href} />
             ))}
           </div>
         </div>
@@ -100,16 +104,19 @@ export default function Skills() {
 const SkillsCard = ({
   title,
   description,
+  href,
 }: {
   title: string;
   description: string;
+  href: string;
 }) => (
-  <div
+  <a
+    href={href}
     key={title}
     className="p-7 bg-surface rounded-2xl border border-accent-1/10 hover:border-accent-2/50 hover:shadow-md transition-all duration-300"
   >
     {/* <div className="w-8 h-0.5 bg-accent-2 mb-5" /> */}
     <h3 className="font-bold text-lg mb-3 text-accent-1">{title}</h3>
     <p className="text-muted text-sm leading-relaxed">{description}</p>
-  </div>
+  </a>
 );
