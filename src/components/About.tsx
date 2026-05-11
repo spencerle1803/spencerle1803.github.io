@@ -1,20 +1,32 @@
 export default function About() {
   return (
-    <section id="about" className="bg-accent-2/5 py-28 px-6 border-t border-white/10">
+    <section
+      id="about"
+      className="bg-accent-2/5 py-28 px-6 border-t border-white/10"
+    >
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">About</h2>
           <div className="space-y-4 text-[#888] leading-relaxed">
             {/* Replace with real bio */}
             <p>
-              Hi, I'm Spencer, a marketing specialist based in Melbourne, Australia. I help brands find their voice
-              online and turn that voice into real results.
+              Hi, I'm Spencer, a Melbourne-based marketing professional with
+              experience spanning performance marketing, content production and
+              analytics. I thrive at the intersection of creativity and
+              strategy, helping brands show up better online.
             </p>
             <p>
-              With over 2 years of experience across various industries, I've managed accounts from scrappy startups to
-              established brands, always focused on authentic storytelling and measurable growth.
+              Having worked across industries from financial services to
+              education, I believe good marketing should be both memorable and
+              measurable. I care about work that actually moves the needle,
+              whether that means refining campaigns to be more cost-efficient,
+              nurturing an audience or making sure a brand looks and feels
+              consistent.
             </p>
-            <p>When I'm not deep in content calendars, you'll find me [personal detail].</p>
+            <p>
+              If you're looking for someone to help grow your brand online,
+              let's keep in touch! I'd love to hear what you're working on.
+            </p>
           </div>
         </div>
       </div>
